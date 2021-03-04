@@ -27,12 +27,7 @@ const browserSync = require('browser-sync').create()
 
 function html() {
     return src('src/**.html')
-        .pipe(include({
-            prefix: '@@'
-        }))
-        .pipe(htmlmin({ 
-            collapseWhitespace: true 
-        }))
+        
         .pipe(dest('dist'))
 }
 

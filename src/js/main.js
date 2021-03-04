@@ -58,7 +58,8 @@ $(document).ready(function(){
         var timeinterval = setInterval(updateClock, 1000);
       }
        
-      var deadline = new Date(Date.parse(new Date()) + 17* 24 * 60 * 60 * 1000); // for endless timer
+      //var deadline = new Date(Date.parse(new Date()) + 17 * 24 * 60 * 60 * 1000); // for endless timer
+      var deadline="March 25 2021 00:00:00 GMT+0300";
       initializeClock('countdown', deadline);
 
 
